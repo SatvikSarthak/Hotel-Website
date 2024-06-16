@@ -5,6 +5,7 @@ body, html {
 
 body {
     position: relative;
+    padding-top: 140px;
 }
 
 :root {
@@ -16,6 +17,17 @@ body {
     max-width: 100%;
     height: auto;
 }
+.navbar-collapse {
+    background-color: transparent; 
+    text-align: center;
+}
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.5); 
+        text-align: center;
+    }
+}
+
 
 .header_wrapper .navbar-toggler:focus {
     box-shadow: none;
@@ -46,7 +58,7 @@ body {
 
 .banner_wrapper {
     height: 35.625rem;
-
+     padding-top: 70px;
 }
 
 .banner_wrapper .swiper {
@@ -61,6 +73,7 @@ body {
 background-repeat: no-repeat;
 background-size:cover;
 position: relative;
+height:100vh;
 }
 
 .banner_wrapper .swiper-pagination-bullets .swiper-pagination-bullet{
@@ -71,17 +84,27 @@ position: relative;
 }
 
 .banner_wrapper .slider-caption {
-    position: relative;
-    z-index: 99;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     color:#E25e3e;
+    top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
 
 }
 
 
 .slider-caption h1 {
     font-size: 2.5rem;
+}
+
+.booking-area{
+    position: relative;
+    z-index: 999;
+    margin-top: -4.325rem;
+
 }
