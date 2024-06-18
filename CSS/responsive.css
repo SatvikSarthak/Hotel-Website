@@ -2,6 +2,22 @@
    .about_img{
     padding-top:15rem  ;
    }
+}
+@media (max-width: 991.98px) {
+   .navbar-collapse {
+       background-color: rgba(255, 255, 255, 0.5); 
+       text-align: center;
+   }
+   .room_wrapper .room_content{
+      
+      padding-left: 5rem;
+      padding-right: 5rem;
+   }
+}
 
-
+@media (max-width:560px) {
+   .swiper-wrapper .slider-caption h1{
+     font-size: 2rem ;
+   }
+   
 }

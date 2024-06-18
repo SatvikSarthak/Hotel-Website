@@ -2,17 +2,14 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
 body {
     position: relative;
     padding-top: 140px;
 }
-
 :root {
     --primary-color: #021832;
     --secondary-color: #caa169;
 }
-
 .navbar-brand img {
     max-width: 100%;
     height: auto;
@@ -21,26 +18,15 @@ body {
     background-color: transparent; 
     text-align: center;
 }
-@media (max-width: 991.98px) {
-    .navbar-collapse {
-        background-color: rgba(255, 255, 255, 0.5); 
-        text-align: center;
-    }
-}
-
-
 .header_wrapper .navbar-toggler:focus {
     box-shadow: none;
 }
-
 .header_wrapper menu-navbar-menu {
     align-items: start;
 }
-
 .navbar-nav .nav-link {
     color: #e25e3e !important;
 }
-
 .btn-outline-danger {
     color: #e25e3e !important;
     border-color: #e25e3e !important;
@@ -49,25 +35,20 @@ body {
 .navbar-nav .nav-link:hover {
     text-decoration: underline;
 }
-
 .btn-outline-danger:hover,
 .btn-outline-danger:focus {
     background-color: #e25e3e !important;
     color: #fff !important;
 }
-
 .banner_wrapper {
     height: 35.625rem;
      padding-top: 70px;
 }
-
 .banner_wrapper .swiper {
     width: 100%;
     height: 100%;
 
 }
-
-
  .banner_wrapper .swiper-slide{
   background-position: center; 
 background-repeat: no-repeat;
@@ -75,14 +56,12 @@ background-size:cover;
 position: relative;
 height:100vh;
 }
-
 .banner_wrapper .swiper-pagination-bullets .swiper-pagination-bullet{
     width:1rem;
     height: 1rem;
     border:0.325rem solid whitesmoke;
     background-color: var(--secondary-color);
 }
-
 .banner_wrapper .slider-caption {
     position: absolute;
     display: flex;
@@ -96,19 +75,59 @@ height:100vh;
             
 
 }
-
-
 .slider-caption h1 {
     font-size: 2.5rem;
 }
-
 .booking-area{
     position: relative;
     z-index: 999;
     margin-top: -4.325rem;
 
 }
-
 .about_wrapper{
     padding-top: 9.375rem;
 }
+.room_wrapper .room-items {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in 0s;
+}
+.room_wrapper .room-items img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.room_wrapper .room-items:hover img{
+  -webkit-transform: scale3d(1.1,1.1,1.1);
+   transform:scale3d(1.05,1.05,1.05);
+}
+.room-item-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+    overflow: hidden;
+}
+.room_content {
+    text-align: center;
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.3s ease-in-out; 
+     color: #fff;  
+    padding: 0 10px; 
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+
+}
+.room-items:hover .room-item-wrap {
+    opacity: 0.6;
+}
+.room-items:hover .room_content {
+    transform: scale3d(1.2, 1.2, 1.2);
+}
+
