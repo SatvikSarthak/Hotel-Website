@@ -155,3 +155,9 @@ height:100vh;
     position: relative;
     color: #fff;
 }
+.ca-con{
+    transition: all 0.3s ease-in-out ;
+}
+.ca-con:hover{
+    transform: scale3d(1.03,1.03,1.03);    background-color: rgba(0, 0, 0, 0.5);
+}
