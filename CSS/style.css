@@ -131,3 +131,27 @@ height:100vh;
     transform: scale3d(1.2, 1.2, 1.2);
 }
 
+.services_wrapper .row.align-items-center.service-item-wrap {
+    margin-left: 0;
+    margin-right: 0;
+}
+.services_wrapper{
+    margin-top: 3rem;
+}
+.service-item-wrap img{
+ margin-bottom: 2rem;
+}
+
+.service-menu-area ul{
+    padding-right:8rem;
+}
+
+.counter{
+    background-image: url(/images/counter.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3.125rem;
+    position: relative;
+    color: #fff;
+}

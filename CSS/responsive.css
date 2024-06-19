@@ -2,22 +2,32 @@
    .about_img{
     padding-top:15rem  ;
    }
+   #services .service-item-wrap {
+      text-align: center;
+  }
+  
+  #services .service-menu-area ul {
+      padding: 0;
+      list-style: none;
+  }
+  
+  #services .service-menu-area ul li {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+  }
+  .navbar-collapse {
+   background-color: rgba(255, 255, 255, 0.5); 
+   text-align: center;
 }
-@media (max-width: 991.98px) {
-   .navbar-collapse {
-       background-color: rgba(255, 255, 255, 0.5); 
-       text-align: center;
-   }
-   .room_wrapper .room_content{
-      
-      padding-left: 5rem;
-      padding-right: 5rem;
-   }
+.room_wrapper .room_content{
+  
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
-
+}
 @media (max-width:560px) {
    .swiper-wrapper .slider-caption h1{
      font-size: 2rem ;
    }
-   
 }
