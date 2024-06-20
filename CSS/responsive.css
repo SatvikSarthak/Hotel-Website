@@ -1,4 +1,4 @@
-@media (max-width:991px ) {
+@media (max-width:991.98px ) {
    .about_img{
     padding-top:15rem  ;
    }
@@ -26,7 +26,14 @@
   padding-right: 5rem;
 }
 
-
+.car-tit{
+  font-size: 1.25rem; /* Adjust as needed */
+  white-space: normal; /* Ensure the title wraps */
+  text-wrap: nowrap;
+}
+.price_wrapper .card-text{
+  text-wrap: nowrap;
+}
  
 }
 @media (max-width:560px) {
@@ -35,13 +42,6 @@
    }
 }
 /* responsive.css */
-@media (min-width: 768px) and (max-width: 991px) {
-  .card-title {
-    font-size: 1.25rem; /* Adjust as needed */
-    white-space: normal; /* Ensure the title wraps */
-  }
-  .card-text {
-    font-size: 1rem; /* Adjust as needed */
-    white-space: normal; /* Ensure the text wraps */
-  }
-}
+
+  
+ 
